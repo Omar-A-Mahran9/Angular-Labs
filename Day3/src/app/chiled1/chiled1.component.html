@@ -1,0 +1,14 @@
+<p style="color:red;text-align:center;">chiled1 works!</p>
+<h1>Registration Form</h1>
+<div class="form">
+
+  <label>Name:</label>
+  <input type="text" [(ngModel)]="username" [value]="username">
+  <p *ngIf="username.length<=3" style="color:red; background-color: white;">must username be >3</p>
+  <label>Age:</label>
+  <input type="number" [(ngModel)]="age" [value]="age">
+  <p *ngIf="age<20 || age>40 " style="color:red; background-color: white;">must be between 20 and 40 </p>
+  <input type="button" (click)='addData()' value="Add">
+
+
+</div>

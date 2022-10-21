@@ -1,0 +1,15 @@
+<p style="color: red; text-align:center;">chiled2 works!</p>
+<h1>Students info</h1>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Age</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of DatafromParent" >
+      <td > {{s.Name}} </td>
+      <td> {{s.Age}}</td>
+    </tr>
+  </tbody>
+</table>
+

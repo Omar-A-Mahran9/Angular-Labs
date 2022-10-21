@@ -1,0 +1,29 @@
+<h1>Registration Form</h1>
+<div class="form">
+  <label>Name:</label>
+  <input type="text" [(ngModel)]="studenName" [value]="studenName">
+  <p *ngIf="studenName.length<=3 && studenName!=''" style="color: red; background:white" >must be >3</p>
+  <label>Age:</label>
+  <input type="number" [(ngModel)]="studenAge" [value]="studenAge">
+  <input type="button" value="Add" (click)="AddToArray();">
+  <p *ngIf="studenAge<30 else trueblock" style="color: red; background:white" >Age must be >30</p>
+  <ng-template #trueblock ><div style="color: green;" >Valid</div></ng-template>
+
+</div>
+
+<h1>Students info</h1>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Age</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of ArrForAll ">
+      <td>{{s.Name}}</td>
+      <td >{{s.Age}}</td>
+
+    </tr>
+
+  </tbody>
+</table>
+

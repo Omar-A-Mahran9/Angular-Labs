@@ -1,0 +1,72 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  color: darkblue;
+  background-color: lightgray;
+  width:50%;
+  border-radius: 30px;
+  margin: 20px auto;
+  text-align: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 50%;
+  margin: auto ;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form *{
+  margin: 4px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.form input[type="button"]{
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.form input[type="button"]:hover{
+background-color: darkblue;
+transform: scale(1.1);
+color: white;
+cursor: pointer;
+
+}
+.form input[type='text'],input[type='number']{
+padding: 7px;
+width: 70%;
+}
+
+table{
+border: 1px solid black;
+margin: auto;
+width: 50%;
+text-align: center;
+border-radius: 10px;
+padding: 10px;
+}
+
+table th{
+  background-color: gray;
+  padding: 10px;
+  font-size: 20px;
+}
+table tr td{
+  padding: 7px;
+  border-bottom: 1px solid black;
+
+}
+
+
+table tr:nth-child(odd){
+  background-color: lightgray;
+
+}

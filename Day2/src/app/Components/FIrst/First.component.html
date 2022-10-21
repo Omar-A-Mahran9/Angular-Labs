@@ -1,0 +1,8 @@
+<h1>Retype input value by Two  way binding by Angular </h1>
+<form>
+<label>Insert Your Name Please </label>
+<input type="input" name="FName" (input)="Getname($event)" value="{{Fname}}">
+<!--<input type="input" name="lName" [(ngModel)]="Fname">-->
+<input type="reset">
+</form>
+<h2>{{Fname}}</h2>
