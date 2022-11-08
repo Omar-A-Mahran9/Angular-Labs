@@ -1,0 +1,25 @@
+<h1>Registeration</h1>
+<form class="form" (ngSubmit)="Add()" #f="ngForm">
+    
+    <label>Name</label>
+    <input class="form-control" type="text" name="name"  [(ngModel)]="studentName" required>
+    <div style="color: red;" *ngIf="studentName.length < 3 && studentName !=''">
+        Length &gt; 3
+        </div>
+   
+    <label>Age</label>
+    <input class="form-control" type="number" name="age" [(ngModel)]="studentAge" required>
+    <div style="color: red;" *ngIf="studentAge > 40 || studentAge < 20 && studentAge != 0;else trueBlock">
+       20 &gt; Age &lt; 40
+    </div>
+    <label>Email</label>
+    <input class="form-control" type="email" ngModel  name="email"   #email="ngModel" required>
+    <div style="color: red;" *ngIf="!email.valid && email.touched">Please enter a valid email!</div>
+    <ng-template #trueBlock>
+        <div style="color: green;" *ngIf="studentAge >=20 && studentAge <=40 && studentAge !=0 ">
+            Valid
+        </div>
+    </ng-template>
+    <input type="submit" value="Add" [disabled]="!f.valid" >
+</form>
+

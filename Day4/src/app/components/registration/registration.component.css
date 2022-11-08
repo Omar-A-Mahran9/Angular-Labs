@@ -1,0 +1,63 @@
+h1{
+    font-weight: 50;
+    font-size:50px;
+}
+*{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    margin: 10px auto;
+    color: rgb(0, 0, 0);
+    border-radius: 1px;
+}
+.form {
+    width: 40%;
+    margin:50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form * {
+    width: 50%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+input[type="button"]:hover { 
+    background-color: rgba(0, 0, 0, 0.301);
+    cursor: pointer;
+}
+
+
+input[type="button"]:active {
+    background-color: rgba(0, 0, 122, 0.435);
+}
+label{
+    font-weight: 700;
+        font-size: 30px;
+        color: rgb(0, 0, 0);     
+}
+input{
+    cursor: pointer;
+}
+
+input[type="text"]:hover, input[type="number"],
+[type="email"]:hover {
+
+    background-color: rgba(255, 255, 255, 0.301);
+    
+}
+
+input[type="text"],[type="button"],[type="number"],[type="email"] {
+font-weight:900;
+font-size: 25px;
+    color: rgb(0, 0, 0);
+
+}
+div{
+    font-weight:900;
+        font-size: 20px;
+}
+
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
